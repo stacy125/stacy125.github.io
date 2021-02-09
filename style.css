@@ -1,0 +1,99 @@
+* {
+    margin: 10px;
+    padding: 10px;
+    background-color: rgb(0, 17, 252);
+}
+header {
+    font-size: 35px;
+    color: fuchsia;
+}
+h1, h3 {
+    text-align: center;
+    color: rgb(187, 216, 23);
+}
+.hand {
+    max-width: 50%; 
+    min-width: 300px;
+    width: 300px;
+    height: auto;
+}
+.pr, .work, .story {
+    text-justify: auto;
+    color: lightblue;
+
+}
+.container {
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+}
+.image-container img{
+    padding: 0px;
+    width: 500px;
+    height: 400px;
+    box-sizing: border-box;
+    
+}
+.waterfall {
+    width: 150%;
+    height: 150%;
+}
+.transition-image {
+    position: absolute;
+    width: 500px;
+    height: 400px;
+    top: 50px;
+    left: 50px;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+.transition-image:hover {
+    opacity: 1;
+}
+/* .me::after {
+    color: rgb(207, 28, 163);
+    display: flex;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+.me:hover::after {
+    opacity: 0.5;
+} */
+.slider-container {
+    display: flex;
+    position: relative;
+    height: 400px;
+    width: 500px;
+}
+.slider {
+    display: flex;
+    position: static;
+    height: 400px;
+    width: 500px;
+    top: 0px;
+    left: 0px;
+    background-image: url(iguana.png);
+    animation: slide 20s infinite;
+    background-color: black;
+}
+
+@keyframes slide {
+    25% {
+        background-image: url(iguana.png);
+    }
+    50% {
+        background-image: url(cave.png);
+    }
+    75% {
+        background-image: url(water-cave.png);
+    }
+    100% {
+        background-image: url(sunset.png);
+    }
+}
